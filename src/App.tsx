@@ -18,13 +18,13 @@ function App() {
       link: 'https://ekyc.aliceblueonline.com/?source=WMPN696'
     },
     {
-      title: 'https://www.facebook.com/people/The-Life-Crest-Financial-Services/61568342825958/',
+      title: 'Join our Facebook community',
       icon: <BarChart3 className="w-6 h-6" />,
       description: 'Connect with us on Facebook',
       link: 'https://www.facebook.com/people/The-Life-Crest-Financial-Services/61568342825958/'
     },
     {
-      title: 'Join Our Community',
+      title: 'Visit us @ Instagram',
       icon: <Users className="w-6 h-6" />,
       description: 'Connect with fellow investors',
       link: 'https://www.instagram.com/thelifecrest_'
