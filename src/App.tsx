@@ -19,13 +19,13 @@ function App() {
     },
     {
       title: 'Join our Facebook community',
-      icon: <BarChart3 className="w-6 h-6" />,
+      icon: <Facebook className="w-6 h-6" />,
       description: 'Connect with us on Facebook',
       link: 'https://www.facebook.com/people/The-Life-Crest-Financial-Services/61568342825958/'
     },
     {
       title: 'Visit us @ Instagram',
-      icon: <Users className="w-6 h-6" />,
+      icon: <Instagram className="w-6 h-6" />,
       description: 'Connect with fellow investors',
       link: 'https://www.instagram.com/thelifecrest_'
     }
@@ -59,8 +59,11 @@ function App() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {services.map((service, index) => (
-            <div
+            <a
               key={index}
+              href={service.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative"
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
@@ -78,7 +81,7 @@ function App() {
                   <ExternalLink className="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
@@ -86,13 +89,28 @@ function App() {
       {/* Social Links */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex justify-center space-x-6">
-          <a href="#" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300">
+          <a 
+            href="https://www.instagram.com/thelifecrest_" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
+          >
             <Instagram className="w-6 h-6 text-white" />
           </a>
-          <a href="#" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300">
+          <a 
+            href="https://www.facebook.com/people/The-Life-Crest-Financial-Services/61568342825958/"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
+          >
             <Facebook className="w-6 h-6 text-white" />
           </a>
-          <a href="#" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300">
+          <a 
+            href="https://t.me/thelifecrest"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
+          >
             <Send className="w-6 h-6 text-white" />
           </a>
         </div>
