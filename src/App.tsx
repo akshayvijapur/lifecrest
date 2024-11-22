@@ -9,25 +9,25 @@ function App() {
       title: 'Open a Free Demat Account',
       icon: <Building2 className="w-6 h-6" />,
       description: 'Start your investment journey with zero opening charges',
-      link: '#'
+      link: 'https://upstox.com/open-account/?f=JH7559'
     },
     {
-      title: 'Investment Advisory',
+      title: 'Alice Blue Demat account Opening',
       icon: <TrendingUp className="w-6 h-6" />,
-      description: 'Expert guidance for your portfolio management',
-      link: '#'
+      description: 'Start your Alice Blue Demat portfolio',
+      link: 'https://ekyc.aliceblueonline.com/?source=WMPN696'
     },
     {
-      title: 'Market Analysis',
+      title: 'https://www.facebook.com/people/The-Life-Crest-Financial-Services/61568342825958/',
       icon: <BarChart3 className="w-6 h-6" />,
-      description: 'In-depth market research and analysis',
-      link: '#'
+      description: 'Connect with us on Facebook',
+      link: 'https://www.facebook.com/people/The-Life-Crest-Financial-Services/61568342825958/'
     },
     {
       title: 'Join Our Community',
       icon: <Users className="w-6 h-6" />,
       description: 'Connect with fellow investors',
-      link: '#'
+      link: 'https://www.instagram.com/thelifecrest_'
     }
   ];
 
